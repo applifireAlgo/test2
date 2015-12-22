@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.UserAccessLevelTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.UserAccessLevelTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; UserAccessLevelTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.477s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.095s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.191s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.011s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.180s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:21:11.267--ClientSession(2119903532)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [ED3D1FBA-27C5-4F57-8A86-A3788577704C, tVKjHzg3kbTM8ASodrbeYU3q8eBY2mEumnyDf1q5TAShguSWat, 7ZPgekk7AWpIGmxRxX5hzcKqDDqBZgOCCq0GmPbXuGFf2zaVCR, LswCnnSwoHLnTqm7k0mKmxySFSL4NbwhV1aCdqMfBvxghJP7zN, n1VlMne8miE3zFoNgc9m6T3MMX6QcDHQG9oz63cRVWscrTEqsn, 33396, 1, AAAAA, 2015-12-22 18:51:11.255, null, 2015-12-22 18:51:11.255, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:21:11.344--ClientSession(298511264)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind =&gt; [1, ED3D1FBA-27C5-4F57-8A86-A3788577704C]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:21:11.376--ClientSession(1759040197)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind =&gt; [ED3D1FBA-27C5-4F57-8A86-A3788577704C]
+[EL Fine]: sql: 2015-12-22 13:21:11.378--ClientSession(1759040197)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessLevel_M SET levelDescription = ?, levelHelp = ?, levelIcon = ?, levelName = ?, userAccessLevel = ?, updatedBy = ?, versionId = ? WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind =&gt; [wnrGukHF98FA2Hs46oBHW3rn7XtZMw6gtxjvHmMyUvTZSZDx2R, zrpthTuIWBQ44uax2LmNu9xxOQkTmsKNCf8iRpyXWr2HdO4gQs, 4RAnW3qFafw0nvmHk2klRl71Fhnv38XEX2s0H9UOz3Blb9k5dY, zaxINpjUe2FJMDQRLw8n0qUGwcGHyNw2MUnmSARAFwQBB5iZ4y, 89513, AAAAA, 2, ED3D1FBA-27C5-4F57-8A86-A3788577704C, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:21:11.537--ClientSession(2124719167)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind =&gt; [1, ED3D1FBA-27C5-4F57-8A86-A3788577704C]
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:21:11.545--ClientSession(1456555709)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind =&gt; [ED3D1FBA-27C5-4F57-8A86-A3788577704C]
+[EL Fine]: sql: 2015-12-22 13:21:11.547--ClientSession(1456555709)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind =&gt; [ED3D1FBA-27C5-4F57-8A86-A3788577704C, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Dec 22, 2015 1:21:36 PM</p>
+</div>
+</div>
+</body>
+</html>

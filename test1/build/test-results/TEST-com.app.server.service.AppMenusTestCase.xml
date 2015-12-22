@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.AppMenusTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-12-22T13:20:52" hostname="0b9ad812dce1" time="0.308">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.AppMenusTestCase" time="0.106"/>
+  <testcase name="test2Update" classname="com.app.server.service.AppMenusTestCase" time="0.051"/>
+  <testcase name="test3FindById" classname="com.app.server.service.AppMenusTestCase" time="0.02"/>
+  <testcase name="test4Delete" classname="com.app.server.service.AppMenusTestCase" time="0.13"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:20:52.675--ClientSession(267599170)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_AppMenus_M (menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [D97783C4-B1FF-4315-932A-E09A29677F6F, zjyxrvggUWhmatE3paBsfd4f2k6xvuHaoLB1yEWtvlkDE8h0J2, 2, 8, J4JonEP8QyKFPIpW8DN17rOxiM1JtPONYWBlfSHoreVWSqHOPg, GnKV3QUbxhWHOuyhOvPaooCCeg9sxgyOAUQddocjmqUAPpwkiY, true, true, UHDZNlmjJrd9WghWfVjCXxYWsWuulSnpFOvT50A65rD27fgPAI, fPM4vOVBgoXFAvTBWaPPYcJ5QrICykDm1jTJNlS39LNAEJfTu3, VDShAZ4xzQtonk3gP13gkjzbLQBHmGAqYZhkwCsfDFVMUPeOB4, XobV9FuUofbhk8fkiCBBADSOL4bADrlBKd11C9gV0mdz5JCHsd, awc, 1, AAAAA, 2015-12-22 18:50:52.656, null, 2015-12-22 18:50:52.656, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:20:52.758--ClientSession(516702814)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE ((activeStatus = ?) AND (menuId = ?))
+	bind => [1, D97783C4-B1FF-4315-932A-E09A29677F6F]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:20:52.763--ClientSession(1199229623)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind => [D97783C4-B1FF-4315-932A-E09A29677F6F]
+[EL Fine]: sql: 2015-12-22 13:20:52.766--ClientSession(1199229623)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--UPDATE ast_AppMenus_M SET appId = ?, appType = ?, menuAccessRights = ?, menuAction = ?, menuCommands = ?, menuIcon = ?, menuLabel = ?, menuTreeId = ?, RefObjectId = ?, uiType = ?, updatedBy = ?, versionId = ? WHERE ((menuId = ?) AND (versionId = ?))
+	bind => [5vuqWfs2oLx3S7fyZqvleagtJrIFInHFKXgaHPPfTPncuCPfc6, 1, 1, 9DLLHiW8ytwajUzQV0rf2eBrO21PODCuqbLkv5GtcV5qmF3gbn, y1zOQpSwvQCxHWJ4aYU3o3NyUUt6rBJDwTmOCXkC10FqZMvQKP, kOn9Y0ybCeKzucDblSWwNwrddkdkAsDsssHZHnmmTzxYR5dsOR, 99QjhykLJYvRvdBYEMtnqdi42kDJiRkt28o4DJ64huSfUZ74aV, l8lYUZ7Zoe49rEAiaFKxPoGiRkIALbxAwu6aIEVTtBPt7rmtSU, FZUacWwBxhFRQ8lOhdu0mrd3tIconoXADIjhX1DXjfgeTRmMdX, Apt, AAAAA, 2, D97783C4-B1FF-4315-932A-E09A29677F6F, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:20:52.819--ClientSession(335767908)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE ((activeStatus = ?) AND (menuId = ?))
+	bind => [1, D97783C4-B1FF-4315-932A-E09A29677F6F]
+In around repository aspect
+[EL Fine]: sql: 2015-12-22 13:20:52.829--ClientSession(1899760471)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--SELECT menuId, appId, appType, menuAccessRights, menuAction, menuCommands, menuDisplay, menuHead, menuIcon, menuLabel, menuTreeId, RefObjectId, uiType, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_AppMenus_M WHERE (menuId = ?)
+	bind => [D97783C4-B1FF-4315-932A-E09A29677F6F]
+[EL Fine]: sql: 2015-12-22 13:20:52.833--ClientSession(1899760471)--Connection(1511417314)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_AppMenus_M WHERE ((menuId = ?) AND (versionId = ?))
+	bind => [D97783C4-B1FF-4315-932A-E09A29677F6F, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
